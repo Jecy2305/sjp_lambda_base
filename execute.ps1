@@ -22,7 +22,6 @@ aws s3 cp "$LAMBDA_FUNCTION_NAME.zip" "s3://$S3_BUCKET/$S3_KEY" --profile $AWS_P
 # Actualizar la función en AWS Lambda (si ya existe)
 aws lambda update-function-code `
     --function-name $LAMBDA_FUNCTION_NAME `
-    --zip-file fileb://$LAMBDA_FUNCTION_NAME.zip `
     --s3-bucket $S3_BUCKET `
     --s3-key $S3_KEY `
     --profile $AWS_PROFILE
