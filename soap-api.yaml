@@ -60,7 +60,7 @@ Resources:
         Fn::GetAtt: 
           - ApiGatewayRestApi
           - RootResourceId
-      PathPart: 'soap'
+      PathPart: 'producto'
       RestApiId: 
         Ref: 'ApiGatewayRestApi'
 

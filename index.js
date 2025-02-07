@@ -19,7 +19,7 @@ exports.handler = async (event) => {
         const response = {
             statusCode: 500,
             headers: { 'Content-Type': 'application/json' },
-            body: 'No hay body',
+            body: '{"error":"No hay body"}',
         };
         return response;
     } else {
@@ -41,7 +41,7 @@ exports.handler = async (event) => {
 
 /****** TEST LOCAL ******/
 
-
+/*
 let resp = this.handler({
     "body": `{"nombre":"Juan","apellido":"Perez"}`}
 );
@@ -51,3 +51,5 @@ let resp = this.handler({
 resp.then((data) => {
     console.info("Respuesta del Lambda:" + JSON.stringify(data));
 });   
+
+*/
