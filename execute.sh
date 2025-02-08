@@ -1,8 +1,8 @@
     ## CREACIÓN DEL STACK
-    #aws cloudformation create-stack --stack-name stack-gbzapp001sjp --template-body file://soap-api.yaml --capabilities CAPABILITY_NAMED_IAM --profile petpal_dev
+    #aws cloudformation create-stack --stack-name stack-gbzapp001jec --template-body file://soap-api.yaml --capabilities CAPABILITY_NAMED_IAM --profile petpal_dev
 
     ## ACTUALIZACIÓN DEL STACK
-    #aws cloudformation update-stack --stack-name stack-gbzapp001sjp --template-body file://soap-api.yaml --capabilities CAPABILITY_NAMED_IAM --profile petpal_dev
+    #aws cloudformation update-stack --stack-name stack-gbzapp001jec --template-body file://soap-api.yaml --capabilities CAPABILITY_NAMED_IAM --profile petpal_dev
 
 
     #!/bin/bash
@@ -14,7 +14,7 @@
     HANDLER_FILE="index.js"
 
     # Nombre de la función AWS Lambda
-    LAMBDA_FUNCTION_NAME="stack-gbzapp001sjp-gbzapp001sjp-6C6KRD7hPPBz"
+    LAMBDA_FUNCTION_NAME="stack-gbzapp001jec-gbzapp001jec-naQFE9eZRY0I"
 
     # Perfil de AWS CLI
     AWS_PROFILE="petpal_dev"

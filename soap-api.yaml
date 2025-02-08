@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
-  gbzapp001sjp:
+  gbzapp001jec:
     Type: 'AWS::Lambda::Function'
     Properties: 
       Handler: index.handler
@@ -51,7 +51,7 @@ Resources:
   ApiGatewayRestApi:
     Type: 'AWS::ApiGateway::RestApi'
     Properties:
-      Name: 'gbzapi001sjp'
+      Name: 'gbzapi001jec'
 
   ApiGatewayResource:
     Type: 'AWS::ApiGateway::Resource'
@@ -81,7 +81,7 @@ Resources:
             - 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaArn}/invocations'
             - LambdaArn: 
                 Fn::GetAtt: 
-                  - gbzapp001sjp
+                  - gbzapp001jec
                   - Arn
         IntegrationResponses: 
           - StatusCode: 200
@@ -105,7 +105,7 @@ Resources:
             - 'arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${LambdaArn}/invocations'
             - LambdaArn: 
                 Fn::GetAtt: 
-                  - gbzapp001sjp
+                  - gbzapp001jec
                   - Arn
         IntegrationResponses: 
           - StatusCode: 200
@@ -127,7 +127,7 @@ Resources:
     Properties:
       Action: 'lambda:InvokeFunction'
       FunctionName: 
-        Ref: 'gbzapp001sjp'
+        Ref: 'gbzapp001jec'
       Principal: 'apigateway.amazonaws.com'
       SourceArn: 
         Fn::Sub: 
@@ -140,7 +140,7 @@ Resources:
     Properties:
       Action: 'lambda:InvokeFunction'
       FunctionName: 
-        Ref: 'gbzapp001sjp'
+        Ref: 'gbzapp001jec'
       Principal: 'apigateway.amazonaws.com'
       SourceArn: 
         Fn::Sub: 
