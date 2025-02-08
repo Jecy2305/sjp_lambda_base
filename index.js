@@ -30,7 +30,7 @@ exports.handler = async (event) => {
                 'Content-Type': 'application/json'
             },
             statusCode: 200,
-            body: JSON.stringify({'Ambiente2':  AMBIENTE})
+            body: JSON.stringify({'Ambiente':  AMBIENTE})
         };
 
     }
