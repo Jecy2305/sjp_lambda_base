@@ -9,7 +9,7 @@ $AWS_PROFILE = "petpal_dev"
 
 $S3_BUCKET = "growbiz-dev"  # Reemplaza con el nombre de tu bucket S3
 $S3_KEY = "lambda-functions/$LAMBDA_FUNCTION_NAME.zip"  # Ruta dentro del bucket
-$ROLE_ARN = "arn:aws:iam::418334950001:role/bbc-lambda-role"  # Reemplaza con el ARN del rol IAM
+# $ROLE_ARN = "arn:aws:iam::418334950001:role/bbc-lambda-role"  # Reemplaza con el ARN del rol IAM
 
 
 
